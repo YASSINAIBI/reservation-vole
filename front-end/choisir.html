@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light justify-content-between">
+      <div class="container">
+        <a class="navbar-brand">
+          <img src="./img/logo.png" class="logo" alt="logo" />
+        </a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Aide</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="blank"></div>
+    <section class="container">
+      <div class="section-home d-flex justify-content-center">
+        <div>
+          <div class="text-step font-weight-bold">Chercher</div>
+          <div class="d-flex align-items-center">
+            <div
+              class="rounded-circle bg-danger d-flex justify-content-center align-items-center part-parent"
+            >
+              <div class="rounded-circle bg-danger part-child"></div>
+            </div>
+            <div class="bg-danger step"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="text-step font-weight-bold">Choisir</div>
+          <div class="d-flex align-items-center">
+            <div
+              class="rounded-circle bg-danger d-flex justify-content-center align-items-center part-parent"
+            >
+              <div class="rounded-circle bg-danger part-child"></div>
+            </div>
+            <div class="bg-danger step"></div>
+          </div>
+        </div>
+        <div>
+          <div class="text-step font-weight-bold">Réserver</div>
+          <div class="d-flex align-items-center">
+            <div
+              class="rounded-circle bg-danger d-flex justify-content-center align-items-center part-parent"
+            >
+              <div class="rounded-circle bg-light part-child"></div>
+            </div>
+            <div class="bg-secondary step"></div>
+          </div>
+        </div>
+        <div>
+          <div class="text-step font-weight-bold">Payer</div>
+          <div class="d-flex align-items-center">
+            <div
+              class="rounded-circle bg-secondary d-flex justify-content-center align-items-center part-parent"
+            >
+              <div class="rounded-circle bg-light part-child"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="blank"></div>
+    <main class="container">
+      <div class="vol d-flex mb-2">
+        <div class="vol-logo" style="background-image: url(./img/royal_air_maroc.png)"></div>
+        <div class="vol-info d-flex flex-column border border-secondary">
+          <span
+            class="px-4 py-1 bg-light rounded h-25 m-2 w-50 text-center font-weight-bold d-flex justify-content-center align-items-center"
+          >
+            Royal air maroc
+          </span>
+          <div class="d-flex h-50">
+            <div
+              class="vol-depart d-flex flex-column justify-content-center align-items-center w-25"
+            >
+              <p class="text-primary font-weight-bold vol-time">14:00</p>
+              <p class="font-weight-bold text-secondary">Agadir</p>
+            </div>
+            <div class="vol-destination bg-secondary w-50"></div>
+            <div
+              class="vol-arrive d-flex flex-column justify-content-center align-items-center w-25"
+            >
+              <p class="text-primary font-weight-bold vol-time">14:00</p>
+              <p class="font-weight-bold text-secondary">Agadir</p>
+            </div>
+          </div>
+        </div>
+        <div class="vol-price border border-secondary border-left-0 d-flex flex-column">
+          <form action="#" class="h-100 w-100">
+            <span
+              class="vol-price-mad font-weight-bold h-100 align-items-center text-primary d-flex justify-content-center text-center"
+            >
+              10000 <br />
+              DH
+            </span>
+          </form>
+        </div>
+      </div>
+      <div class="blank"></div>
+      <div class="choice-place">
+        <div class="place-options p-4">
+          <div class="d-flex mb-3">
+            <span
+              class="font-weight-bold d-flex justify-content-center text-center align-items-center"
+              >Siège libre</span
+            >
+            <div class="bg-success ml-4 place-dispo rounded"></div>
+          </div>
+          <div class="d-flex">
+            <span
+              class="font-weight-bold d-flex justify-content-center text-center align-items-center"
+              >Siège reservé</span
+            >
+            <div class="bg-danger ml-4 place-non-dispo rounded"></div>
+          </div>
+        </div>
+        <div style="height: 500px" class="w-100 d-flex choice-my-place">
+          <div class="wing w-25 h-100" style="background-image: url(./img/wing1.jpg)"></div>
+          <div class="w-50 h-100 bg-light d-flex">
+            <div
+              class="w-100 h-100 bg-light border" 
+            >
+              <div class="form-check w-100 d-flex justify-content-around mt-2 flex-wrap" id="allPlace">
+
+              </div>
+            </div>
+        </div>
+        <div class="wing w-25 h-100" style="background-image: url(./img/wing2.jpg)"></div>
+      </div>
+        <div class="blank"></div>
+        <form action="./forminfo.html">
+            <button type="submit" class="btn btn-primary btn-lg btn-block w-75 m-auto">Réserver</button>
+        </form>
+    </main>
+    <div class="blank"></div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+        for (let i =1 ; i <= 20; i++) {
+          
+        
+document.getElementById('allPlace').innerHTML += `
+<div class="myplace mb-4">
+                  <input
+                    class="form-check-input styledRadio"
+                    type="radio"
+                    name="exampleRadios"
+                    id="exampleRadios${i}"
+                    value="option1"
+                  />
+                  <label class="form-check-label bg-success rounded" for="exampleRadios${i}"></label>
+                </div>
+`
+}
+    </script>
+  </body>
+</html>
